@@ -1,0 +1,196 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "montserrat", sans-serif;
+	background-color: black;
+}
+
+
+header{
+	padding: 50px 15px 0px;
+}
+
+header h1{
+	color: #FFF;
+	font-size: 48px;
+	font-weight: 500;
+	text-align: center;
+}
+
+
+main{
+	width: 120%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+section{
+	padding: 15px;
+
+}
+
+
+section input{
+	display: block;
+	width: 100%;
+	padding: 15px;
+	border:none;
+	outline: none;
+	background: none;
+	background-color: #EEE;
+	border-radius: 2px;
+	color:#53566A;
+	transition: 0.3 ease-out
+}
+
+section input:hover{
+		box-shadow: 0px 0px 4px 3px white;
+}
+
+
+section input:focus{
+	box-shadow: 0px 0px 8px 3px white;
+	transform: scale(1.01);
+}
+
+.results{
+	display:flex;
+	flex-wrap: wrap;
+	margin:0 -15;
+}
+
+
+
+.results .result{
+	width: 33.3%;
+	max-width:30rem;
+	padding:10px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.results .result img{
+	border: 10px white solid;
+	
+}
+
+
+.results .result h3{
+	color:black;
+	padding: 10px;
+	background: white;
+	transition: .3s ease-out
+}
+
+
+
+.results .result:hover h3{
+	transform: scale(1.02);
+	background: #445565;
+	color: black;
+}
+
+.popup{
+	position: fixed;
+	top: 50%;
+	left:50%;
+	width: 97vh;
+	transform: translate(-50%, -50%);
+	
+	background-color: #445565;
+	
+}
+
+.popup .content {
+		display: block;
+		
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 25px;
+		color: white;
+
+}
+
+
+
+
+
+
+.popup .content h2{
+	font-size: 25px;
+}
+
+
+.popup .content h2 span{
+	font-weight: 800;
+	font-size: 25px;
+}
+
+
+
+ .popup .content .rating{
+	margin: 1rem; 
+}
+
+.popup .content .plot{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px 30px
+
+}
+
+.popup .content .plot img{
+	flex: 1 1 50%;
+	max-width: 250px;
+	padding: 0px;
+	border:solid 2px white;
+}
+
+
+
+
+
+
+.popup .content .plot p{
+	flex: 1 1 50%;
+	
+	padding: 15px
+}
+
+
+
+
+.popup .content button{
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 18px;
+	background: #44C484;
+	color:white;
+	border-radius: 8px;
+	border: none;
+
+	outline: none;
+	cursor: pointer;
+	transition: .5s ease-out;
+	
+}
+
+
+
+
+
+
+.popup .content  .close:hover{
+	border:1px solid black;
+	background: #445565;
+}
+
+.popup .content  .close:active{
+	transform: scale(1.1);
+}
